@@ -1,15 +1,24 @@
 {
-  "title": "API Reference",
+  "title": "Referensi API",
   "path": "/reference/react",
   "routes": [
     {
       "hasSectionHeader": true,
-      "sectionHeader": "react@18.2.0"
+      "sectionHeader": "react@{{version}}"
+    },
+    {
+      "title": "Overview",
+      "path": "/reference/react"
     },
     {
       "title": "Hooks",
-      "path": "/reference/react",
+      "path": "/reference/react/hooks",
       "routes": [
+        {
+          "title": "useActionState",
+          "path": "/reference/react/useActionState",
+          "canary": true
+        },
         {
           "title": "useCallback",
           "path": "/reference/react/useCallback"
@@ -51,6 +60,11 @@
           "path": "/reference/react/useMemo"
         },
         {
+          "title": "useOptimistic",
+          "path": "/reference/react/useOptimistic",
+          "canary": true
+        },
+        {
           "title": "useReducer",
           "path": "/reference/react/useReducer"
         },
@@ -73,7 +87,7 @@
       ]
     },
     {
-      "title": "Components",
+      "title": "Komponen",
       "path": "/reference/react/components",
       "routes": [
         {
@@ -95,9 +109,18 @@
       ]
     },
     {
-      "title": "APIs",
+      "title": "API",
       "path": "/reference/react/apis",
       "routes": [
+        {
+          "title": "act",
+          "path": "/reference/react/act"
+        },
+        {
+          "title": "cache",
+          "path": "/reference/react/cache",
+          "canary": true
+        },
         {
           "title": "createContext",
           "path": "/reference/react/createContext"
@@ -117,20 +140,51 @@
         {
           "title": "startTransition",
           "path": "/reference/react/startTransition"
+        },
+        {
+          "title": "use",
+          "path": "/reference/react/use",
+          "canary": true
+        },
+        {
+          "title": "experimental_taintObjectReference",
+          "path": "/reference/react/experimental_taintObjectReference",
+          "canary": true
+        },
+        {
+          "title": "experimental_taintUniqueValue",
+          "path": "/reference/react/experimental_taintUniqueValue",
+          "canary": true
         }
       ]
     },
     {
       "hasSectionHeader": true,
-      "sectionHeader": "react-dom@18.2.0"
+      "sectionHeader": "react-dom@{{version}}"
     },
     {
-      "title": "Components",
+      "title": "Hooks",
+      "path": "/reference/react-dom/hooks",
+      "routes": [
+        {
+          "title": "useFormStatus",
+          "path": "/reference/react-dom/hooks/useFormStatus",
+          "canary": true
+        }
+      ]
+    },
+    {
+      "title": "Komponen",
       "path": "/reference/react-dom/components",
       "routes": [
         {
-          "title": "Common (e.g. <div>)",
+          "title": "Umum (e.g. <div>)",
           "path": "/reference/react-dom/components/common"
+        },
+        {
+          "title": "<form>",
+          "path": "/reference/react-dom/components/form",
+          "canary": true
         },
         {
           "title": "<input>",
@@ -151,11 +205,36 @@
         {
           "title": "<textarea>",
           "path": "/reference/react-dom/components/textarea"
+        },
+        {
+          "title": "<link>",
+          "path": "/reference/react-dom/components/link",
+          "canary": true
+        },
+        {
+          "title": "<meta>",
+          "path": "/reference/react-dom/components/meta",
+          "canary": true
+        },
+        {
+          "title": "<script>",
+          "path": "/reference/react-dom/components/script",
+          "canary": true
+        },
+        {
+          "title": "<style>",
+          "path": "/reference/react-dom/components/style",
+          "canary": true
+        },
+        {
+          "title": "<title>",
+          "path": "/reference/react-dom/components/title",
+          "canary": true
         }
       ]
     },
     {
-      "title": "APIs",
+      "title": "API",
       "path": "/reference/react-dom",
       "routes": [
         {
@@ -175,6 +254,36 @@
           "path": "/reference/react-dom/hydrate"
         },
         {
+          "title": "preconnect",
+          "path": "/reference/react-dom/preconnect",
+          "canary": true
+        },
+        {
+          "title": "prefetchDNS",
+          "path": "/reference/react-dom/prefetchDNS",
+          "canary": true
+        },
+        {
+          "title": "preinit",
+          "path": "/reference/react-dom/preinit",
+          "canary": true
+        },
+        {
+          "title": "preinitModule",
+          "path": "/reference/react-dom/preinitModule",
+          "canary": true
+        },
+        {
+          "title": "preload",
+          "path": "/reference/react-dom/preload",
+          "canary": true
+        },
+        {
+          "title": "preloadModule",
+          "path": "/reference/react-dom/preloadModule",
+          "canary": true
+        },
+        {
           "title": "render",
           "path": "/reference/react-dom/render"
         },
@@ -185,7 +294,7 @@
       ]
     },
     {
-      "title": "Client APIs",
+      "title": "API Klien",
       "path": "/reference/react-dom/client",
       "routes": [
         {
@@ -199,7 +308,7 @@
       ]
     },
     {
-      "title": "Server APIs",
+      "title": "API Server",
       "path": "/reference/react-dom/server",
       "routes": [
         {
@@ -230,10 +339,63 @@
     },
     {
       "hasSectionHeader": true,
-      "sectionHeader": "Legacy APIs"
+      "sectionHeader": "Peraturan React"
     },
     {
-      "title": "Legacy React APIs",
+      "title": "Pengantar",
+      "path": "/reference/rules",
+      "routes": [
+        {
+          "title": "Komponen dan Hooks harus murni",
+          "path": "/reference/rules/components-and-hooks-must-be-pure"
+        },
+        {
+          "title": "React memanggil Komponen dan Hooks",
+          "path": "/reference/rules/react-calls-components-and-hooks"
+        },
+        {
+          "title": "Peraturan Hooks",
+          "path": "/reference/rules/rules-of-hooks"
+        }
+      ]
+    },
+    {
+      "hasSectionHeader": true,
+      "sectionHeader": "React Server Components"
+    },
+    {
+      "title": "Server Components",
+      "path": "/reference/rsc/server-components",
+      "canary": true
+    },
+    {
+      "title": "Server Actions",
+      "path": "/reference/rsc/server-actions",
+      "canary": true
+    },
+    {
+      "title": "Directives",
+      "path": "/reference/rsc/directives",
+      "canary": true,
+      "routes": [
+        {
+          "title": "'use client'",
+          "path": "/reference/rsc/use-client",
+          "canary": true
+        },
+        {
+          "title": "'use server'",
+          "path": "/reference/rsc/use-server",
+          "canary": true
+        }
+      ]
+    },
+    {
+      "hasSectionHeader": true,
+      "sectionHeader": "API Lama"
+    },
+    {
+      "title": "API React Lama",
       "path": "/reference/react/legacy",
       "routes": [
         {
